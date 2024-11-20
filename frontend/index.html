@@ -23,6 +23,7 @@
                         </button>
                     </div>
                 </div>
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
                 <table class="min-w-full bg-gray-900 rounded-lg overflow-hidden shadow-md">
                     <thead>
                         <tr class="bg-gray-700">
@@ -59,6 +60,12 @@
                                     <i class="fas fa-sort"></i>
                                 </button>
                             </th>
+                            <th class="p-4 text-left text-xs font-medium text-pink-400 uppercase tracking-wider">
+                                Extra Questions
+                                <button id="extra-ques" class="ml-2 hover:text-white">
+                                    <i class="fas fa-sort"></i>
+                                </button>
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="leaderboard-body">
@@ -83,6 +90,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
